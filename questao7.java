@@ -8,13 +8,13 @@ public class questao7 {
 
     public static int newValue (int vle) {
         if(vle % 2 == 0) vle /= 2;
-        else vle = 3 * (vle + 1);
+        else vle = (3 * vle) + 1;
 
         return vle;
     }
     public static void main(String [] args) {
-        int value = 4;
-
-        System.out.print(newValue(value));
+        int value = 7;
+        
+        System.out.println(questao7.newValue(value));
     }
 }
