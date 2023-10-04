@@ -3,6 +3,7 @@
 // Se x é impar, x = 3 * x + 1 ;
 // Imprime x ;
 
+import java.util.Scanner;
 
 public class questao7 {
 
@@ -13,8 +14,16 @@ public class questao7 {
         return vle;
     }
     public static void main(String [] args) {
-        int value = 7;
-        
-        System.out.println(questao7.newValue(value));
+        Scanner inputValue = new Scanner(System.in);
+
+        System.out.print("Valor: ");
+        int value = inputValue.nextInt();
+
+        while(value != 1) {
+            System.out.print(value + " -> ");
+            value = newValue(value);
+        }
+
+        System.out.println(value);
     }
 }
